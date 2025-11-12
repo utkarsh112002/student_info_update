@@ -1,8 +1,9 @@
 import { withStyles } from '@ellucian/react-design-system/core/styles';
 import { spacing40 } from '@ellucian/react-design-system/core/styles/tokens';
 import { Typography, TextLink } from '@ellucian/react-design-system/core';
+import { useUserInfo } from "@ellucian/experience-extension-utils";
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const styles = () => ({
     card: {
@@ -15,6 +16,11 @@ const styles = () => ({
 
 const StudentInfoUpdateCard = (props) => {
     const { classes } = props;
+
+    const userInfo = useUserInfo();
+    useEffect(() => {
+        console.log(userInfo) 
+    },[userInfo])
 
     return (
         <div className={classes.card}>
