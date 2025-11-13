@@ -9,8 +9,17 @@ module.exports = {
         description: 'This is an introductory card to the Ellucian Experience SDK',
         pageRoute: {
             route: '/',
-            excludeClickSelectors: ['a']
-        }
+        },
+        configuration: {
+        server: [
+          {
+            key: "apiKey",
+            label: "API Key",
+            type: "password",
+            required: true,
+          },
+        ],
+      },
     }],
     page: {
         source: './src/page/router.jsx'
