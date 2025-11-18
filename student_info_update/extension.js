@@ -7,9 +7,6 @@ module.exports = {
         title: 'StudentInfoUpdate Card',
         displayCardType: 'StudentInfoUpdate Card',
         description: 'This is an introductory card to the Ellucian Experience SDK',
-        pageRoute: {
-            route: '/',
-        },
         configuration: {
         server: [
           {
